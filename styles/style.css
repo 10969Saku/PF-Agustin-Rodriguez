@@ -1,0 +1,334 @@
+:root {
+    --max-width: 1280px;
+    --min-width: 320px;
+}
+
+* {box-sizing: border-box;
+
+}
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1ccfa;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.479);
+    transition: color .3s ease;
+
+}
+
+a:hover {
+    color: #b217d9;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: var(--min-width)
+}
+
+.header, .content, .footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    background-color: #c8b6ff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    max-height: 12vh;
+}
+
+.ig    {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+
+.menu-list {
+    margin: 0;
+    padding:0 5rem;
+}
+
+
+.menu-list__item {
+    display: inline-block;
+    margin: 0 .5rem;
+    font-size: 16px;
+
+}
+
+
+/* INDEX */
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f1ccfa;
+}
+
+.content-box__title {
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 1rem 0 1rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 3px 5px 5px;
+}
+
+.content-box__subtitle {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+p {
+    margin: 0 auto;
+    display: flex;
+    width: 75%;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.content-box {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.content-box__image {
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+
+/* Footer */
+
+
+.footer {
+    display: flex;
+    justify-content: end;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+/* TRATAMIENTOS */
+
+
+
+.card {
+    background-color: hwb(221 45% 21% / 0.747);
+    margin: 5% 20%;
+    border-radius: 0.75rem;
+    padding: 0.25rem 0;
+    transition: box-shadow 0.3s ease;
+}
+
+.tratamientos {
+    width: 100%;
+    height: auto;
+
+}
+
+.h2-card {
+    margin: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.p-card {
+    margin: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 3);
+}
+
+/* Fin "Tratamientos" */
+
+
+/* Inicio "Nosotros" */
+
+
+
+.p-nosotros {
+    text-align: justify;
+
+}
+
+.h2-nosotros {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+
+.div-mision {
+    padding: 0 1rem 1rem 0;
+}
+
+.div-vision {
+    padding: 0 1rem 1rem 0;
+}
+
+/* Fin "Nosotros" */
+
+
+/* Inicio "Contacto" */
+
+.form-subtitle   {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Formulario */
+
+.form-title {
+    padding-bottom: 1rem;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form   {
+    width: 50%;
+    min-width: 300px;
+    background-color: #E7C6FF;
+    margin: auto;
+}
+
+.form-input {
+    width: 100%;
+    height: 35px;
+    background-color: #C8B6FF;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #B8C0FF;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.form-text  {
+    width: 100%;
+    background: #C8B6FF;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #B8C0FF;
+    border-radius: 0.5rem;
+}
+
+.form-text::placeholder {
+    font-size: 1rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 1.2rem;
+}
+
+.enviar {
+    width: 35%;
+    height: 45px;
+    background: #C8B6FF;
+    margin: 1rem 0;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: grey;
+    text-align: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+.enviar:hover {
+    background: #B8C0FF;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 3);
+}
+
+/* Fin de formulario */
+
+/* Ubicación */
+
+.ubication {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    justify-content: center;
+
+}
+
+.map {
+    height: 300px;
+    width: 50%;
+    border-radius: 1rem;
+    margin: auto;
+
+}
+
+.map-link {
+    border-radius: 1rem;
+
+}
+
+/* Fin Ubicación */
+
+/* Fin "Contacto" */
+
+/* Inicio Galería */
+
+.galery-box__img {
+    width: 100%;
+    border-radius: .3rem;
+}
+
+.galery {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+
+.galery-box {
+    flex: 25%;
+    padding: 5px;
+}
+
+
+/* Fin Galería */
