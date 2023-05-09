@@ -2,11 +2,6 @@
 
 
 @media (max-width:992px) {
-    .galery-box{
-        /* flex: 50%; */
-        
-    }
-
     p{
         font-size: 15px;
     }
@@ -14,9 +9,6 @@
 
 @media (max-width:768px){
 
-    /* .header {
-        padding: 0;
-    } */
 
     .logo {
         margin-left: 4rem;
@@ -53,7 +45,7 @@
     .content-box__subtitle{
         font-size: 26px;
     }
-    
+
     p{
         font-size: 12px;
     }
@@ -63,12 +55,10 @@
         padding: 0;
     }
 
-    /* Contacto */
 
     .ubication {
         font-size: 10px;
     }
-    /* Galeria */
 
     .galery-box{
         flex: 100%;
@@ -113,8 +103,10 @@
     }
 
     p {
-        font-size: 15px;
+        font-size: 12px;
     }
+
+
 }
 
 
