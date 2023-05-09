@@ -1,5 +1,5 @@
 :root {
-    --max-width: 1280px;
+    --max-width: 100%;
     --min-width: 320px;
 }
 
@@ -18,7 +18,7 @@ html, body {
     color: black;
 }
 
-a {
+.menu-list__item a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -27,21 +27,21 @@ a {
 
 }
 
-a:hover {
+.menu-list__item a:hover {
     color: #b217d9;
 }
 
 .container {
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     min-width: var(--min-width)
 }
 
-.header, .content, .footer {
+.content, .footer {
     width: 100%;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 3rem;
 }
 
 .header {
@@ -49,27 +49,26 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10rem;
+    padding: 0 5rem;
     background-color: #c8b6ff;
 }
+
 
 .logo {
     display: flex;
     align-items: center;
     max-height: 12vh;
+    padding-right: 3rem;
 }
 
 .ig    {
-    display: flex;
-    align-items: center;
+    margin-left: 5rem;
     width: 30px;
     height: 30px;
 }
 
-
 .menu-list {
-    margin: 0;
-    padding:0 5rem;
+    margin: 0 auto;
 }
 
 
@@ -80,6 +79,10 @@ a:hover {
 
 }
 
+.navbar {
+    width: 100%;
+}
+
 
 /* INDEX */
 
@@ -87,9 +90,9 @@ a:hover {
 .content {
     display: flex;
     flex-direction: column;
+    padding-top: 5rem;
     width: 70%;
     margin: 0 auto;
-    padding: 1rem;
     background-color: #f1ccfa;
 }
 
