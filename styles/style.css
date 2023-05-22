@@ -235,6 +235,7 @@ p {
     min-width: 300px;
     background-color: #E7C6FF;
     margin: auto;
+    border-radius: 1rem;
 }
 
 .form-input {
