@@ -18,7 +18,7 @@ html, body {
     color: black;
 }
 
-.menu-list__item a {
+.menu__list-item a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -27,7 +27,7 @@ html, body {
 
 }
 
-.menu-list__item a:hover {
+.menu__list-item a:hover {
     color: #b217d9;
 }
 
@@ -68,13 +68,14 @@ html, body {
     height: 30px;
 }
 
-.menu-list {
+.menu__list {
     margin: 0 auto;
 }
 
 
-.menu-list__item {
+.menu__list-item {
     display: inline-block;
+    align-items: end;
     margin: 0 .5rem;
     font-size: 16px;
 
@@ -91,25 +92,26 @@ html, body {
 .content {
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
-    width: 75%;
+    align-items: center;
+    width: 80%;
     margin: 0 auto;
     background-color: #f1ccfa;
 }
 
-.content-box__title {
+.content__box-title {
     font-size: 2.3rem;
     text-align: center;
+    padding-top: 8rem;
     margin: 1rem 0 1rem;
-    padding-top: 5rem;
     font-weight: bold;
     letter-spacing: 3px;
     text-shadow: 3px 5px 5px;
 }
 
-.content-box__subtitle {
+.content__box-subtitle {
     font-size: 2rem;
     text-align: center;
+    margin-top: 8px;
 
 }
 
@@ -121,12 +123,12 @@ p {
     font-size: 16px;
 }
 
-.content-box {
+.content__box {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.content-box__image {
+.content__box-image {
     display: flex;
     margin: 0 auto;
     width: 75%;
@@ -150,37 +152,58 @@ p {
 
 /* TRATAMIENTOS */
 
-
-
-.card {
-    background-color: hwb(221 45% 21% / 0.747);
-    margin: 5% 20%;
-    border-radius: 0.75rem;
-    padding: 0.25rem 0;
-    transition: box-shadow 0.3s ease;
+.tratamientos {
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
 }
 
-.tratamientos {
+.tratamientos__card {
+    background-color: hwb(221 45% 21% / 0.747);
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+}
+
+.tratamientos__card-img {
     width: 100%;
     height: auto;
 
 }
 
-.h2-card {
-    margin: 1rem;
+.tratamientos__card-subtitle {
     color: white;
+    font-size: 24px;
     text-align: center;
 }
 
-.p-card {
+.p__card {
     padding: 5px;
     width: 100%;
     color: white;
-    text-align: justify;
+    text-align: left;
 }
 
-.card:hover {
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 3);
+.card__link {
+    background-color: #c8b6ff;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.card__link:hover {
+    background-color: #f1ccfa;
+}
+
+.tratamientos__card:hover {
+    transform: translateY(-15px);
 }
 
 /* Fin "Tratamientos" */
@@ -190,23 +213,23 @@ p {
 
 
 
-.p-nosotros {
+.p__nosotros {
     text-align: justify;
 
 }
 
-.h2-nosotros {
+.h2__nosotros {
     font-size: 2rem;
     text-align: center;
     padding: 1rem 0;
 
 }
 
-.div-mision {
+.div__mision {
     padding: 0 1rem 1rem 0;
 }
 
-.div-vision {
+.div__vision {
     padding: 0 1rem 1rem 0;
 }
 
@@ -215,18 +238,18 @@ p {
 
 /* Inicio "Contacto" */
 
-.form-subtitle   {
+.form__subtitle   {
     text-align: center;
     padding: 1rem;
 }
 
 /* Formulario */
 
-.form-title {
+.form__title {
     padding-bottom: 1rem;
 }
 
-.form-container {
+.form__container {
     text-align: center;
 }
 
@@ -238,7 +261,7 @@ p {
     border-radius: 1rem;
 }
 
-.form-input {
+.form__input {
     width: 100%;
     height: 35px;
     background-color: #C8B6FF;
@@ -250,7 +273,7 @@ p {
     margin-bottom: 1rem;
 }
 
-.form-text  {
+.form__text  {
     width: 100%;
     background: #C8B6FF;
     padding: 10px;
@@ -260,11 +283,11 @@ p {
     border-radius: 0.5rem;
 }
 
-.form-text::placeholder {
+.form__text::placeholder {
     font-size: 1rem;
 }
 
-.form-label {
+.form__label {
     display: block;
     font-size: 1.2rem;
 }
@@ -309,7 +332,7 @@ p {
 
 }
 
-.map-link {
+.map__link {
     border-radius: 1rem;
 
 }
@@ -320,9 +343,9 @@ p {
 
 /* Inicio Galería */
 
-.galery-box__img {
+.galery__box-img {
     width: 100%;
-    border-radius: .3rem;
+    border-radius: 1rem;
 }
 
 .galery {
@@ -332,7 +355,7 @@ p {
 }
 
 
-.galery-box {
+.galery__box {
     flex: 25%;
     padding: 5px;
 }

@@ -11,7 +11,7 @@
 
 
     .logo {
-        margin-left: 4rem;
+        margin-left: 1rem;
     }
 
     .ig {
@@ -28,7 +28,7 @@
     }
 
     .button {
-        margin-right: 4rem;
+        margin-right: 1rem;
     }
 
     .container{
@@ -64,12 +64,18 @@
         flex: 100%;
         
     }
+
+
     
     
 }
 
 
 @media (max-width:576px) {
+    .header { padding: 0 2rem;
+        
+    }
+
     .logo {
         max-height: 6vh;
         padding-right: 1rem;
@@ -106,6 +112,11 @@
         font-size: 12px;
     }
 
+    .tratamientos {
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
 
 }
 
