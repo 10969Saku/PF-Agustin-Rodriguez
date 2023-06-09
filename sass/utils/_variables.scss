@@ -1,6 +1,26 @@
-
 // breakpoints
 
 $bpSmall: 576px;
-$bpMedium: 768px;
+$bpMedium: 767px;
 $bpLarge: 992px;
+
+
+// Mixins
+
+@mixin large {
+    @media screen and (max-width: $bpLarge) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media screen and (max-width: $bpMedium) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media screen and (max-width: $bpSmall) {
+        @content;
+    }
+}

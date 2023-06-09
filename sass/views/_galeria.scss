@@ -7,13 +7,13 @@
 .galery__box {
 	flex: 25%;
 	padding: 5px;
+
+	@include medium {
+		flex: 100%;
+	}
 }
 .galery__box-img {
 	width: 100%;
 	border-radius: 1rem;
 }
-@media (max-width: $bpMedium) {
-	.galery__box {
-		flex: 100%;
-	}
-}
+

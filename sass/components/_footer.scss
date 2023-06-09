@@ -6,14 +6,9 @@
     width: 100%;
     margin: 0 auto;
     padding: 2rem 3rem;
-}
 
-@media (max-width: $bpMedium) {
-
-    .footer{
+    @include medium {
         justify-content: center;
         padding: 10px;
     }
 }
-
-

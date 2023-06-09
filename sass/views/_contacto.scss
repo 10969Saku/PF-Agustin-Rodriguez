@@ -67,6 +67,10 @@
 	font-size: 1.3rem;
 	letter-spacing: 1px;
 	justify-content: center;
+
+	@include medium {
+		font-size: 12px;
+	}
 }
 .map {
 	height: 300px;
@@ -76,10 +80,4 @@
 }
 .map__link {
 	border-radius: 1rem;
-}
-
-@media (max-width: $bpMedium) {
-    .ubication {
-        font-size: 12px;
-    }
 }
