@@ -45,11 +45,23 @@ body {
 }
 p {
 	margin: 0 auto;
-	display: flex;
-	width: 100%;
+	margin-top: 7px;
+	width: 75%;
 	text-align: justify;
-	font-size: 16px;
-	color: rgba($color: #000000, $alpha: 0.6);
+	font-size: 18px;
+	color: rgba($color: #000000, $alpha: 0.8);
+
+	span {
+		color: blueviolet;
+		font-weight: bold;
+	}
+
+	a {
+		text-decoration: none;
+		color: blueviolet;
+		font-weight: bold;
+
+	}
 
 	@include large {
 		font-size: 15px;
@@ -59,6 +71,8 @@ p {
 		font-size: 12px;
 	}
 }
+
+
 .content__box-title {
 	font-size: 36px;
 	text-align: center;
@@ -80,19 +94,24 @@ p {
 	font-size: 30px;
 	text-align: center;
 	padding-top: 10px;
+	color: blueviolet;
 
 	@include medium {
 		font-size: 26px;
 	}
 }
 .content__box {
+	display: flex;
+	flex-direction: column;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 .content__box-image {
 	display: flex;
 	margin: 0 auto;
+	margin-bottom: 12px;
 	width: 75%;
 	height: auto;
 	border-radius: 0.5rem;
+	box-shadow: 15px -20px 50px -12px rgba(0, 0, 0, 0.6);
 }

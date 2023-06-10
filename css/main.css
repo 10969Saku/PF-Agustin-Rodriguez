@@ -50,11 +50,20 @@ body {
 
 p {
   margin: 0 auto;
-  display: flex;
-  width: 100%;
+  margin-top: 7px;
+  width: 75%;
   text-align: justify;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+p span {
+  color: blueviolet;
+  font-weight: bold;
+}
+p a {
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: bold;
 }
 @media screen and (max-width: 992px) {
   p {
@@ -90,6 +99,7 @@ p {
   font-size: 30px;
   text-align: center;
   padding-top: 10px;
+  color: blueviolet;
 }
 @media screen and (max-width: 767px) {
   .content__box-subtitle {
@@ -98,6 +108,8 @@ p {
 }
 
 .content__box {
+  display: flex;
+  flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -105,9 +117,11 @@ p {
 .content__box-image {
   display: flex;
   margin: 0 auto;
+  margin-bottom: 12px;
   width: 75%;
   height: auto;
   border-radius: 0.5rem;
+  box-shadow: 15px -20px 50px -12px rgba(0, 0, 0, 0.6);
 }
 
 .header {
@@ -299,8 +313,11 @@ p {
 .form {
   width: 50%;
   min-width: 300px;
+  border: 5px;
+  border-style: outset;
   background-color: #E7C6FF;
   margin: auto;
+  border-color: hwb(276 38% 9%/0.75);
   border-radius: 1rem;
 }
 
@@ -355,9 +372,10 @@ p {
 }
 
 .ubication {
-  font-size: 1.3rem;
+  font-size: 20px;
   letter-spacing: 1px;
   justify-content: center;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .ubication {
@@ -366,6 +384,9 @@ p {
 }
 
 .map {
+  border: 5px;
+  border-style: outset;
+  border-color: hwb(276 38% 9%/0.75);
   height: 300px;
   width: 50%;
   border-radius: 1rem;
